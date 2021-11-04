@@ -15,6 +15,10 @@ List<Map<String, dynamic>> days = [
     'name': 'Landing Page',
     'route': AppRoutes.landingPage.path,
   },
+  {
+    'name': 'Splash Screen Page',
+    'route': AppRoutes.splashScreenPage.path,
+  },
 ];
 
 Map<String, WidgetBuilder> routes() {
