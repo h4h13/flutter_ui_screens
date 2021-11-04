@@ -5,6 +5,7 @@ import 'package:flutter_100_screens/pages/landing_page.dart';
 import 'package:flutter_100_screens/pages/signup_page.dart';
 import 'package:flutter_100_screens/pages/splash_screen_page.dart';
 
+const kPrimaryColor = Color(0xFF6C63FF);
 List<Map<String, dynamic>> days = [
   {
     'name': 'Sign Up Page',
