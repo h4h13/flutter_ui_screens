@@ -64,6 +64,6 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
 class SplashScreenModel {
   void init(BuildContext context) {
     Future.delayed(const Duration(seconds: 3)).then((value) =>
-        Navigator.pushReplacementNamed(context, AppRoutes.homePage.path));
+        Navigator.pushReplacementNamed(context, AppRoutes.listPage.path));
   }
 }

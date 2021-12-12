@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_100_screens/common/constants.dart';
+import 'package:flutter_100_screens/common/enums.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({
+class ListPage extends StatefulWidget {
+  const ListPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ListPage> createState() => _ListPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ListPageState extends State<ListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,13 +20,14 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: ListView.builder(
         itemCount: days.length,
-        itemBuilder: (context, index) => ListTile(
-          onTap: () =>
-              Navigator.pushNamed(context, days[index]['route'] ?? '/'),
-          title: Text(
-            days[index]['name'] ?? '',
-          ),
-        ),
+        itemBuilder: (context, index) {
+          final day = days[index];
+          return ListTile(
+            leading: Text('${day.day}'),
+            onTap: () => Navigator.pushNamed(context, day.appRoutes.path),
+            title: Text(day.name),
+          );
+        },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

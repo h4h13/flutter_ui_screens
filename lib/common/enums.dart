@@ -1,14 +1,16 @@
 enum AppRoutes {
   splashScreenPage,
-  homePage,
+  listPage,
   signUpPage,
   landingPage,
+  loginPage,
+  localAuth,
 }
 
 extension AppRoutesMappsing on AppRoutes {
   String get path {
     switch (this) {
-      case AppRoutes.homePage:
+      case AppRoutes.listPage:
         return '/home';
       case AppRoutes.splashScreenPage:
         return '/';
@@ -16,6 +18,10 @@ extension AppRoutesMappsing on AppRoutes {
         return '/signup';
       case AppRoutes.landingPage:
         return '/landing';
+      case AppRoutes.loginPage:
+        return '/login';
+      case AppRoutes.localAuth:
+        return '/local-auth';
     }
   }
 }

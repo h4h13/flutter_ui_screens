@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_100_screens/common/constants.dart';
 
-class LandingPage extends StatelessWidget {
-  const LandingPage({Key? key}) : super(key: key);
+class LandingMobilePage extends StatelessWidget {
+  const LandingMobilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
